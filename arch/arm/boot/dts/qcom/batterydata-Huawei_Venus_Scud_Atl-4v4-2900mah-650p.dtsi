@@ -1,0 +1,52 @@
+qcom,2322812_huawei_venus_2900mah_averaged_masterslave_feb4th2016 {
+	/* #2322812_Huawei_Venus_2900mAh_averaged_MasterSlave_Feb4th2016*/
+	qcom,max-voltage-uv = <4400000>;
+	qcom,nom-batt-capacity-mah = <2900>;
+	qcom,batt-id-kohm = <56>;
+	qcom,battery-beta = <3435>;
+	qcom,battery-type = "scud_atl_650p";
+	qcom,fastchg-current-ma = <1900>;
+	qcom,fg-cc-cv-threshold-mv = <4390>;
+	qcom,fg-iterm-ma = <200>;
+	qcom,fg-chg-iterm-ma = <150>;
+	qcom,chg-rslow-comp-c1 = <3285048>;
+	qcom,chg-rslow-comp-c2 = <4568548>;
+	qcom,chg-rs-to-rslow = <1140949>;
+	qcom,chg-rslow-comp-thr = <0xA3>;
+	qcom,checksum = <0xAED7>;
+	qcom,gui-version = "PMI8950GUI - 2.0.0.15";
+	qcom,fg-profile-data = [
+		 DC 83 9D 7C 
+		 E6 80 D8 76 
+		 61 83 94 6E 
+		 D8 88 1C 94 
+		 28 82 F0 99 
+		 F1 BC 95 C9 
+		 55 0F 09 88 
+		 0D 7E D7 81 
+		 3A 7C 46 83 
+		 46 73 82 7D 
+		 7E 71 5E 82 
+		 25 99 45 BC 
+		 C0 C8 5E 0C 
+		 B1 0B 1E 5A 
+		 14 70 C6 FD 
+		 EA 3C A0 45 
+		 56 42 00 00 
+		 C7 46 92 31 
+		 FD 1E 00 00 
+		 00 00 00 00 
+		 00 00 00 00 
+		 A7 70 1E 6B 
+		 4A 5B 8B 88 
+		 E3 75 0B 69 
+		 C8 52 C5 7A 
+		 3D 74 98 61 
+		 DF 77 71 AA 
+		 1D 9D 68 8F 
+		 66 A0 71 0C 
+		 28 00 FF 36 
+		 F0 11 30 03 
+		 00 00 00 0C 
+	];
+};

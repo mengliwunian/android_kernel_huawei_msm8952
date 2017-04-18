@@ -1,0 +1,50 @@
+qcom,2180054_huawei_venus_gy_2750mah_averaged_masterslave_sept29th2015 {
+	/* #2180054_Huawei_Venus_GY_2750mAh_averaged_MasterSlave_Sept29th2015*/
+	qcom,max-voltage-uv = <4400000>;
+	qcom,nom-batt-capacity-mah = <2750>;
+	qcom,batt-id-kohm = <21>;
+	qcom,battery-beta = <3435>;
+	qcom,battery-type = "gy_gy_620b";
+    qcom,fastchg-current-ma = <1900>;
+	qcom,fg-cc-cv-threshold-mv = <4390>;
+	qcom,chg-rslow-comp-c1 = <4221202>;
+	qcom,chg-rslow-comp-c2 = <7384927>;
+	qcom,chg-rs-to-rslow = <1032217>;
+	qcom,chg-rslow-comp-thr = <0xB7>;
+	qcom,checksum = <0xC2DB>;
+	qcom,gui-version = "PMI8950GUI - 2.0.0.14";
+	qcom,fg-profile-data = [
+		 C8 83 5D 77 
+		 04 80 16 75 
+		 55 83 28 4D 
+		 27 82 DD 8D 
+		 02 82 CC 9A 
+		 C8 BD C1 CA 
+		 4C 0F D0 83 
+		 EF 76 67 7B 
+		 3C 74 63 83 
+		 48 6C 51 89 
+		 6C 95 40 82 
+		 3F 9A A9 BD 
+		 F7 CA 4C 0D 
+		 2C 0B 12 5B 
+		 14 70 29 FC 
+		 08 2C 84 44 
+		 97 38 00 00 
+		 D8 4C 6E 32 
+		 3A 42 00 00 
+		 00 00 00 00 
+		 00 00 00 00 
+		 86 6B C5 69 
+		 9F 5C BC 82 
+		 62 76 A2 6A 
+		 FE 6C 62 7A 
+		 EE 6F 2A 5B 
+		 5D 7D 4B B1 
+		 19 5F 62 10 
+		 65 A0 71 0C 
+		 28 00 FF 36 
+		 F0 11 30 03 
+		 00 00 00 0C 
+	];
+};

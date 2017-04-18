@@ -1,0 +1,3 @@
+config HW_DEVICE_DETECT
+     bool "huawei_device_detect support"
+        default n

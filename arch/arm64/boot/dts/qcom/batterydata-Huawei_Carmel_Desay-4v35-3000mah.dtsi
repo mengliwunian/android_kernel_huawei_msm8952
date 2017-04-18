@@ -1,0 +1,51 @@
+qcom,2370125_huawei_carmel_desay_3000mah_averaged_masterslave_apr4th2016 {
+	/* #2370125_Huawei_Carmel_desay_3000mAh_averaged_MasterSlave_Apr4th2016*/
+	qcom,max-voltage-uv = <4350000>;
+	qcom,nom-batt-capacity-mah = <3000>;
+	qcom,batt-id-kohm = <320>;
+	qcom,battery-beta = <3435>;
+	qcom,battery-type = "carmel_desay_lg";
+	qcom,vfloat-batt-warm-mv = <4100>;
+	qcom,fastchg-current-ma = <2100>;
+	qcom,fg-cc-cv-threshold-mv = <4340>;
+	qcom,chg-rslow-comp-c1 = <3212731>;
+	qcom,chg-rslow-comp-c2 = <4199742>;
+	qcom,chg-rs-to-rslow = <1449804>;
+	qcom,chg-rslow-comp-thr = <0x9D>;
+	qcom,checksum = <0xA778>;
+	qcom,gui-version = "PMI8950GUI - 2.0.0.15";
+	qcom,fg-profile-data = [
+		 DD 83 AB 7C 
+		 E2 80 07 77 
+		 80 83 60 7E 
+		 4B 91 24 9C 
+		 14 82 AD 98 
+		 B1 B5 A3 C0 
+		 52 19 01 88 
+		 7A 7D 4F 81 
+		 97 77 5A 83 
+		 B9 5D E2 82 
+		 FC 8D 4D 82 
+		 2A 98 5A B5 
+		 A0 C0 5E 14 
+		 17 0C C4 58 
+		 CE 6E B2 FD 
+		 74 3C BD 3E 
+		 5E 2C 00 00 
+		 FA 4C C4 40 
+		 8E 32 00 00 
+		 00 00 00 00 
+		 00 00 00 00 
+		 2C 73 A5 71 
+		 19 74 BD 83 
+		 FA 77 74 70 
+		 1B 74 82 72 
+		 9F 75 80 68 
+		 C1 4F 13 A1 
+		 39 3D 63 72 
+		 56 A0 71 0C 
+		 28 00 FF 36 
+		 F0 11 30 03 
+		 00 00 00 0C 
+	];
+};

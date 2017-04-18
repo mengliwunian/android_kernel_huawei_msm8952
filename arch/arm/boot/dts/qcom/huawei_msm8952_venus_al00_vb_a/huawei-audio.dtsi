@@ -1,0 +1,67 @@
+/ {
+    huawei_audio_info {
+        compatible = "huawei,hw_audio_info";
+        product-identifier = "venus";
+        speaker-pa = "max98925";
+        speaker-box = "none";
+        builtin-master-mic-exist;
+        builtin-2nd-mic-exist;
+        hand_held_dual_mic_strategy;
+        status = "ok";
+        loud_speaker_second_mic_strategy;
+        qcom,box-id-0 = <&msm_gpio 89 0>; 
+        qcom,box-id-1 = <&msm_gpio 90 0>; 		
+        pinctrl-names ="box_default","box_sleep";
+        pinctrl-0 = <&box_id_default>;
+        pinctrl-1 = <&box_id_sleep>;
+    };
+};
+
+&tlmm_pinmux 
+{
+    audio_box_id_pin {
+			qcom,pins = <&gp 89>, <&gp 90>;
+			qcom,num-grp-pins = <2>;
+			qcom,pin-func = <0>;
+			label = "box_id_pin";
+			box_id_default: box_default {
+            drive-strength = <2>;
+            bias-pull-up;
+        };
+        box_id_sleep: box_sleep {
+            drive-strength = <2>;
+            bias-pull-down;
+        };
+	};
+};
+
+&soc {
+    sound {
+		qcom,msm-ext-pa = "quaternary";
+		qcom,msm-micbias1-ext-cap;
+		qcom,msm-gpios =
+			"pri_i2s",
+			"quat_i2s";
+		qcom,pinctrl-names =
+			"all_off",
+			"pri_i2s_act",
+			"quat_i2s_act",
+			"quat_pri_i2s_act";
+		pinctrl-names =
+			"all_off",
+			"pri_i2s_act",
+			"quat_i2s_act",
+			"quat_pri_i2s_act";
+		pinctrl-0 = <&cdc_pdm_lines_sus &cdc_pdm_lines_2_sus &sec_tlmm_lines_sus>;
+		pinctrl-1 = <&cdc_pdm_lines_act &cdc_pdm_lines_2_act &sec_tlmm_lines_sus>;
+		pinctrl-2 = <&cdc_pdm_lines_sus &cdc_pdm_lines_2_sus &sec_tlmm_lines_act>;
+		pinctrl-3 = <&cdc_pdm_lines_act &cdc_pdm_lines_2_act &sec_tlmm_lines_act>;
+	};
+	
+    i2c@7af8000 {
+		max98925@31 {
+			compatible = "maxim,max98925";
+			reg = <0x31>;
+		};	
+    };
+};

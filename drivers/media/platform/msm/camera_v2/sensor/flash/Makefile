@@ -1,0 +1,14 @@
+ccflags-y += -Idrivers/media/platform/msm/camera_v2/sensor/cci
+ccflags-y += -Idrivers/media/platform/msm/camera_v2
+ccflags-y += -Idrivers/media/platform/msm/camera_v2/sensor/io
+ccflags-y += -Idrivers/media/platform/msm/camera_v2/sensor/flash/lm3642_lib
+obj-$(CONFIG_MSMB_CAMERA) += msm_led_flash.o
+obj-$(CONFIG_MSMB_CAMERA) += msm_led_trigger.o
+obj-$(CONFIG_MSMB_CAMERA) += msm_led_i2c_trigger.o
+obj-$(CONFIG_MSMB_CAMERA) += adp1660.o
+obj-$(CONFIG_MSMB_CAMERA) += bd7710.o
+obj-$(CONFIG_MSMB_CAMERA) += msm_led_torch.o
+obj-$(CONFIG_MSMB_CAMERA) += msm_flash.o
+obj-$(CONFIG_MSMB_CAMERA) += lm3642.o
+obj-$(CONFIG_MSMB_CAMERA) += flash_dsm.o
+obj-$(CONFIG_MSMB_CAMERA) += lm3642_lib/

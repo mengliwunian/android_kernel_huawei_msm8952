@@ -1,0 +1,9 @@
+ / {
+        huawei_fac_info {
+                  compatible = "huawei,hw_fac_info";
+                  fac,product_name = "HUAWEI CAM-AL00";
+                  fac,hardware_ver = "HL1CAM1TM";
+                  fac,software_ver = "MSM8952_CAM_AL00_VA";
+                  status = "ok";
+        };
+};

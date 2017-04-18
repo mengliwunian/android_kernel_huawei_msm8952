@@ -1,0 +1,5 @@
+/* poll the sdcard before V1*/
+&sdhc_2 {
+
+		huawei,support-polling;
+};

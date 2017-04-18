@@ -1,0 +1,50 @@
+
+/* Copyright (c) 2015, The Linux Foundation. All rights reserved.
+ *
+ * This program is free software; you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License version 2 and
+ * only version 2 as published by the Free Software Foundation.
+ *
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+ * disable pmu chg-led node, enable gpio led node.
+ */
+
+/* three color led device node */
+&spmi_bus {
+	qcom,pmi8950@2 {
+		chg-leds@1243 {
+			compatible = "chg-leds";
+			linux,name = "red";
+			qcom,chg-led-sw-controls;
+			qcom,chg-led-support;
+			status = "okay";
+		};
+	};
+};
+
+&soc {
+	gpio-leds {
+			compatible = "gpio-leds";
+			pinctrl-names = "default";
+			pinctrl-0 = <&gpio_led_off>;
+			status = "okay";
+			green {
+					gpios = <&msm_gpio 87 0>;
+					label = "green";
+					linux,default-trigger = "none";
+					default-state = "off";
+					retain-state-suspended;
+			};
+
+			blue {
+					gpios = <&msm_gpio 91 0>;
+					label = "blue";
+					linux,default-trigger = "none";
+					default-state = "off";
+			};
+       };
+};
+

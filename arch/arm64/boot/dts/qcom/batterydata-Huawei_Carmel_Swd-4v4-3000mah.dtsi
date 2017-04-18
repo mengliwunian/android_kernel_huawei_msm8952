@@ -1,0 +1,52 @@
+
+qcom,2248209_huawei_carmel_3000mah_master_dec16th2015 {
+	/* #2248209_Huawei_Carmel_3000mAh_Master_Dec16th2015*/
+	qcom,max-voltage-uv = <4350000>;
+	qcom,nom-batt-capacity-mah = <3000>;
+	qcom,batt-id-kohm = <99>;
+	qcom,battery-beta = <3435>;
+	qcom,battery-type = "carmel_xwd_sony";
+	qcom,vfloat-batt-warm-mv = <4200>;
+	qcom,fastchg-current-ma = <2100>;
+	qcom,fg-cc-cv-threshold-mv = <4340>;
+	qcom,chg-rslow-comp-c1 = <2746151>;
+	qcom,chg-rslow-comp-c2 = <3318274>;
+	qcom,chg-rs-to-rslow = <1177842>;
+	qcom,chg-rslow-comp-thr = <0x99>;
+	qcom,checksum = <0x8150>;
+	qcom,gui-version = "PMI8950GUI - 2.0.0.15";
+	qcom,fg-profile-data = [
+		 DF 83 8E 7C 
+		 AB 80 75 76 
+		 41 83 5A 63 
+		 D5 7B 61 87 
+		 05 82 64 99 
+		 B2 B7 99 C3 
+		 5E 11 9B 82 
+		 46 7A 36 7D 
+		 40 72 22 83 
+		 28 7A 37 87 
+		 D6 82 59 82 
+		 01 93 F8 AF 
+		 E5 B9 82 12 
+		 18 0C 3B 5A 
+		 CE 6E B2 FD 
+		 C6 31 81 3F 
+		 CF 30 00 00 
+		 2F 46 8F 39 
+		 DD 2F 00 00 
+		 00 00 00 00 
+		 00 00 00 00 
+		 62 71 5D 70 
+		 23 76 29 79 
+		 09 7C A5 6B 
+		 FD 6F 23 79 
+		 B0 77 E2 6A 
+		 2D 68 84 B8 
+		 11 31 61 F4 
+		 55 A0 71 0C 
+		 28 00 FF 36 
+		 F0 11 30 03 
+		 00 00 00 0C 
+	];
+};
